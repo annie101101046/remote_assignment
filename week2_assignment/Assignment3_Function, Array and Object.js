@@ -1,29 +1,34 @@
 
-
 function avg(data){
-var total = 0;
-for(var i = 0; i < avg.length; i++) {
-    total += avg[i];
+ // your code here
+ // console.log(data)
+var price = 0;
+for (var i = 0; i <data.size; i += 1){
+// console.log(data.products[i].price);
+price = data.products[i].price + price;
 }
-var avg = total / avg.length;
-} 
+console.log(price / data.size);
+}
 
 
 avg({
-size:3, products:[
+size:3, 
+products:[
+
 {
 name:"Product 1",
-price:100 },
+price:100 
+},
+
 {
 name:"Product 2",
-price:700 },
+price:700 
+},
+
 {
 name:"Product 3",
-price:250 }
+price:250 
+}
 ]
 });  // show the average price of all products
 
-
-avg.Product 1;
-avg.Product 2;
-avg.Profuct 3;
