@@ -12,44 +12,27 @@ function calculate(args){
 	return result; 
 }
 
-// 1 way
-	let result = {
- 	 args:""
-	};
 
-	result.args = function(){
-    if(args.op==="+"){ 
-		result=args.n1+args.n2;
-	}else if(args.op==="-"){ 
-		result=args.n1-args.n2;
-  	}else{
-		result="Not supported";
-	}
-	return result; 
+1 + 1
+var adddddd = (nQ, nP) =>{
+	return ({
+		op: '+',
+		n1: nQ,
+		n2: nP,
+	})
+}
+var sub = (nQ, nP) =>{
+	return ({
+		op: '-',
+		n1: nQ,
+		n2: nP,
+	})
 }
 
-result.args();
 
+console.log (calculate(adddddd( 1 , 4)));
+console.log(calculate(sub( 1 , 4)));
 
-// 2 way
-	let result = {
-	if(args.op==="+"){ 
-		result=args.n1+args.n2;
-	}else if(args.op==="-"){ 
-		result=args.n1-args.n2;
-  	}else{
-		result="Not supported";
-	}
-	return result; 
-}
-
-function args() {
-  result.args = result;
-};
-
-
-result.args(); 
-	
 
 
 // Try to call calculate function correctly 
