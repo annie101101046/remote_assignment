@@ -1,0 +1,11 @@
+<!doctype html>
+<script>
+(() => {
+	document.addEventListener('DOMContentLoaded', () => {
+		let req = new XMLHttpRequest()
+		req.addEventListener('load', (event) => document.write(event.target.responseText))
+		req.open('GET', '/getData?number=10')
+		req.send()
+	})
+})()
+</script>
