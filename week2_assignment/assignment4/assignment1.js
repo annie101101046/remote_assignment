@@ -1,36 +1,26 @@
-var button = document.getElementById('change-phrase'),
-    content = document.getElementById('phrase');
+document.addEventListener('DOMContentLoaded', function(){
+var myBanner = document.getElementById('banner');
+myBanner.addEventListener('click', () => {
+  myBanner.innerHTML = "<p>Have a Good Time!</p>";  
+});
+}, false);
 
-button.onclick = function() {
-    content.innerHTML = 'Have a Good Time!';
-};
-
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
 }
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
+            
+    function toggle_visibility() {
+       var e = document.getElementById('iii');
+       if(e.style.display == 'block'){
+          e.style.display = 'none';
+       }
+       else{
+          e.style.display = 'block';
+       }
     }
-  }
-}
 
-<script type="text/javascript">
- jQuery(document).ready(function() {
-// Hide the div
-jQuery('#reveal').hide();
-jQuery('.rv_button').click(function(e){
-e.preventDefault();jQuery("#reveal").slideToggle();
-jQuery('.rv_button').toggleClass('opened closed');
-});
-});
-</script>

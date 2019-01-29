@@ -1,104 +1,59 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-
-body, html {
-  height: 100%;
-  line-height: 1.8;
-}
-
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("images/pencil.jpg");
-  min-height: 100%;
-}
-
-.w3-bar .w3-button {
-  position: center;
-  padding: 16px;
-}
-</style>
+  <head>
+<script src="assignment1.js"></script>
+<link rel="stylesheet" type="text/css" href="assignment1.css">
+</head>
 <body>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-   <a href="#home" class="w3-bar-item w3-button w3-wide"><img id="myNavbar" src="images/student.svg" alt="LOGO" height="20px" width="20px">
-   HELLO WORLD</a>
-    
-    
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
-      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+  <a href="#">item1</a>
+  <a href="#">item2</a>
+  <a href="#">item3</a>
+  <a href="#">item4</a>
 </div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-</nav>
-
-<!-- Header with full-height image -->
-<header class="w3-center bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-center w3-text-white" style="padding:250px">
-    <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
-    <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
-    <p><a href="#about" class="w3-center w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
-  </div> 
-</header>
-
-<!-- Work Section -->
-<div class="w3-container" style="padding:50px 16px" id="work">
-  <h3 class="w3-center">My WORK</h3>
-  <p class="w3-center w3-large">Design and Motion grphic:D</p>
-
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-col l3 m6">
-      <img src="https://i.imgur.com/V1u0cGQ.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="https://i.imgur.com/p5DeGYb.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="https://annie101101046.files.wordpress.com/2017/04/qqorange.gif?w=1024" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="https://annie101101046.files.wordpress.com/2017/04/google.gif?w=600" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
-    </div>
+<div class ="container">
+  <div class ="navbar">
+    <div class="topnav">
+      <a class="active" href="#home">website</a>
+      <a class="logo"><img src="images/student.svg"></a>
+   <div class="topnav-right">
+     <a href="#item1">item1</a>
+     <a href="about">item2</a>
+     <a href="#about">item3</a>
+     <a href="#about">item4</a>
+   </div>
+  <button class="mobile-nav-btn">
+    <span style="font-size:20px; color:#ffffff;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+</div>
+  <div id ="banner">
+  <p>welcome message</p>
   </div>
 
-<!-- Footer -->
-<footer class="w3-center"style="padding:50px 16px">
-  <a href="#home" class="w3-button w3-light-grey" 
-.rv_button.closed:after {content:"\33";}
-.rv_button.opened:after{content:"\32";}
-<i class="fa fa-arrow-up w3-margin-right"></i>contact me</a>
-  <p>Powered by <a href="https://www.badududu.com" title="W3.CSS" target="_blank" class="w3-hover-text-green">內湖87</a></p>
-</footer>
-</body>
+  <div class="second">
+  <p>second title</p>
+  </div>
+
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+</div>
+<div class="flex-container">
+  <div>3</div>  
+  <div>4</div>
+</div>
+</div>
+    </div>
+  </div>
+    <button type="button" id ="call" onclick="toggle_visibility('foo');">call to cation</button>
+ <div id ='iii'><div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+</div>
+<div class="flex-container">
+  <div>3</div>  
+  <div>4</div>
+</div>
+  </body>
 </html>
