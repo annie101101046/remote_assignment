@@ -38,7 +38,20 @@
 
     font-size: 18px;
   }
+
+
+.flex-container {
+  flex-direction : column;
   }
+
+.flex-container > div{
+	width:80%;
+}
+}
+
+}
+
+
   @media only screen and (max-width:499px) {
   body{
 		margin:0px auto;
@@ -135,6 +148,7 @@
 }
 
 .flex-container {
+	flex-direction : column;
   display: flex;
   flex-wrap: wrap;
   display: -webkit-flex;
@@ -154,6 +168,7 @@ display: none
 }
 
 .flex-container > div {
+	width:80%;
   background-color: #f1f1f1;
   flex:1;
   margin: 10px;
