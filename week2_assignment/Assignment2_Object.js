@@ -45,8 +45,6 @@ console.log(calculate(args2)
 
 
 
-console.log (calculate(adddddd( 1 , 4)));
-console.log(calculate(sub( 1 , 4)));
 
 
 
