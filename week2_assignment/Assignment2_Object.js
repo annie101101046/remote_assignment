@@ -13,21 +13,36 @@ function calculate(args){
 }
 
 
-1 + 1
-var adddddd = (nQ, nP) =>{
-	return ({
-		op: '+',
-		n1: nQ,
-		n2: nP,
-	})
+let args1 = {
+	op: '+',
+	n1: 1,
+	n2: 4,
 }
-var sub = (nQ, nP) =>{
-	return ({
-		op: '-',
-		n1: nQ,
-		n2: nP,
-	})
+
+let args2 = {}
+args2.op = '-'
+args2.n1 = 1
+args2.n2 = 4
+
+let A = function(op, n1, n2) {
+	this.op = op
+	this.n1 = n1
+	this.n2 = n2
 }
+
+let a = new A('-', 1, 4)
+
+class A {
+	constructor(op, n1, n2) {
+		this.op = op
+		this.n1 = n1
+		this.n2 = n2
+	}
+}
+
+console.log(calculate(args1))
+console.log(calculate(args2)
+
 
 
 console.log (calculate(adddddd( 1 , 4)));
