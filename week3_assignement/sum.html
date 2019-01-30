@@ -1,7 +1,6 @@
 <!doctype html>
-
 <body>
-	<form action="">
+	<form action="http://localhost:3000/getData">
 		number:
 <input type="text" name ="number" id ="number"> </input>
 <input  style ="padding:20px" type="submit" value="Submit"></button>
@@ -16,32 +15,8 @@
 		var getUrl = 'http://localhost:3000/getData/?number='+ inputNumber;
 		xhr.open('GET', getUrl , true);
 		xhr.send();
-		document.getElementById('res').textContent = xhr.responseText;
+		xhr.onload = () => document.getElementById('res').textContent = xhr.responseText;
 		return false
 	}
 </script>
 </html>
-
-
-
-<!-- <!doctype html>
-<body>
-	<form action="">
-	number: <input id="number" type="text" name="number" value=""><br>
-	<input type="submit" value="Submit">
-</form>
-
-</body>
-<script>
-(() => {
-	var number = document.getElementById('number').value;
-	document.addEventListener('DOMContentLoaded', () => {
-		let req = new XMLHttpRequest()
-		req.addEventListener('load', (event) => document.write(event.target.responseText))
-		req.open('GET', number);
-		req.send()
-	})
-})()
-
-</script>
-</html> -->
