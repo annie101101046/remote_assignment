@@ -1,6 +1,32 @@
 <!doctype html>
+
 <body>
-	<form action="http://localhost:3000/getData">
+	<form action="">
+		number:
+<input type="text" name ="number" id ="number"> </input>
+<input  style ="padding:20px" type="submit" value="Submit"></button>
+<p><em id="res">Result</em></p>
+</form>
+</body>
+<script>
+		var form = document.querySelector('form')
+		form.onsubmit = function(){
+		var inputNumber = document.getElementById('number').value;
+		var xhr = new XMLHttpRequest();
+		var getUrl = 'http://localhost:3000/getData/?number='+ inputNumber;
+		xhr.open('GET', getUrl , false);
+		xhr.send();
+		document.getElementById('res').textContent = xhr.responseText;
+		return false
+	}
+</script>
+</html>
+
+
+
+<!-- <!doctype html>
+<body>
+	<form action="">
 	number: <input id="number" type="text" name="number" value=""><br>
 	<input type="submit" value="Submit">
 </form>
@@ -18,4 +44,4 @@
 })()
 
 </script>
-</html>
+</html> -->
