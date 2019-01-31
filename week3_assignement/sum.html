@@ -14,7 +14,7 @@
 		var inputNumber = document.getElementById('number').value;
 		var xhr = new XMLHttpRequest();
 		var getUrl = 'http://localhost:3000/getData/?number='+ inputNumber;
-		xhr.open('GET', getUrl , false);
+		xhr.open('GET', getUrl , true);
 		xhr.send();
 		document.getElementById('res').textContent = xhr.responseText;
 		return false
