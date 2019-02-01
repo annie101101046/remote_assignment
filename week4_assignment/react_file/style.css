@@ -65,10 +65,8 @@
   }
 
   .topnav-right {
-  color: white;
-  float:right;
   display:none;
-}
+ }
   
   .flex-container {
     flex-direction : column;
@@ -82,7 +80,7 @@
     display:block !important; 
   }
   
-  }
+}
 
 .mobile-nav-btn{
     display: none;
@@ -269,4 +267,5 @@ display: none
 position:relative
 left:50%;
 margin-left:-50%width px;
+
 
