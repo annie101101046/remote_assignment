@@ -18,7 +18,7 @@
 
 @media only screen and (min-width: 800px) and (max-width:1199px) {
 		body{
-		margin:0px auto;
+	margin:0px auto;
     background: red
 	
   }
@@ -63,6 +63,12 @@
   body{
 		margin:0px auto;
   }
+
+  .topnav-right {
+  color: white;
+  float:right;
+  display:none;
+}
   
   .flex-container {
     flex-direction : column;
@@ -87,7 +93,7 @@
 }
 
 .icon-bar{
-  background: white;
+  	background: white;
     height: 3px;
     margin: 4px;
     display: block;
